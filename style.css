@@ -1,0 +1,129 @@
+html{
+  box-sizing: border-box;
+  font-size: 15px;
+  font-weight: 300;
+  font-family: 'Noto Sans'
+ 
+}
+
+*, *:before, *:after{
+  box-sizing: inherit;
+}
+
+body{
+  padding: 50px;
+}
+
+h1, h2, h4, p{
+  margin:0;
+}
+
+
+.card{
+  height: 450px;
+  width: 640px;
+  box-shadow: 0px 0px 11px 2px rgba(0,0,0,0.34);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.top, .bot{
+  width:100%;
+}
+
+.top{
+  height:45%;
+  padding: 35px;
+}
+
+.bot{
+  height:55%;
+  color: #c7ccbe;
+}
+
+.bright, .bleft{
+  padding: 35px;
+  display: inline-block;
+  width:50%;
+  height:100%;
+  vertical-align: top;
+}
+
+.bleft{
+  background-color: #154212; 
+}
+.bright{
+  background-color: #154f11;
+}
+.top h1{
+  color: #154f11;
+  margin-bottom: 15px;
+}
+.top h4{
+  color: #c6e366;
+  margin-bottom: 10px;
+}
+.top p{
+  color: #93a8bf;
+  margin-bottom: 10px;
+}
+
+.bleft h2, .num{
+  color: white;
+  margin-bottom: 10px;
+}
+.num, .string{
+  display: inline-block;
+}
+
+button{
+  color: white;
+  border-radius: 5px;
+  padding: 14px;
+  background-color: #c6e366;
+  border: none;
+  width:100%;
+}
+
+.num{
+  font-weight: 900;
+  font-size:2.4rem;
+}
+
+.string{
+  position:relative;
+  top:-7px;
+  left: 2px;
+  font-size: .9rem;
+}
+h4{
+  margin-bottom: 20px;
+}
+.bright ul{
+  padding: 0;
+  list-style: none;
+  font-size:1.09rem;
+}
+.bright h4{
+  font-size: 1.5rem;
+}
+
+button:hover{
+  color: #154f11;
+  background-color:white;
+  cursor:pointer;
+  transform:scale(1.05);
+}
+
+
+/* 
+text 
+dark green - #154212
+yellow - #c6e366
+bland blue - #93a8bf;
+bland green - #c7ccbe
+
+bot box color -  #154f11 #227d1b
+
+
+*/
