@@ -1,6 +1,7 @@
 html{
   box-sizing: border-box;
-  font-size: 15px;
+  text-align: center;
+  font-size: 14px;
   font-weight: 300;
   font-family: 'Noto Sans'
  
@@ -25,6 +26,8 @@ h1, h2, h4, p{
   overflow: hidden;
 }
 
+
+
 .top, .bot{
   width:100%;
 }
@@ -32,19 +35,19 @@ h1, h2, h4, p{
 .top{
   height:45%;
   padding: 35px;
+  text-size-adjust: inherit;
 }
 
 .bot{
+  display:flex;
+  flex-direction: column;
   height:55%;
   color: #c7ccbe;
 }
 
 .bright, .bleft{
   padding: 35px;
-  display: inline-block;
-  width:100%;
   height:100%;
-  vertical-align: top;
 }
 
 .bleft{
@@ -70,9 +73,6 @@ h1, h2, h4, p{
   color: white;
   margin-bottom: 10px;
 }
-.num, .string{
-  display: inline-block;
-}
 
 button{
   color: white;
@@ -83,17 +83,24 @@ button{
   width:100%;
 }
 
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
 .num{
   font-weight: 900;
-  font-size:2.4rem;
+  font-size: 2.4rem;
 }
 
 .string{
-  position:relative;
-  top:-7px;
-  left: 2px;
   font-size: .9rem;
+  margin-left: 7px;
+  margin-bottom: 6px;
 }
+
 h4{
   margin-bottom: 20px;
 }
@@ -114,14 +121,26 @@ button:hover{
 }
 
 @media (min-width: 700px) {
+  html{
+  font-size: 15px;
+  text-align: justify;
+  }
+  
   .card{
   height: 450px;
   width: 640px;
   }
-  .bleft, .bright{
-  width: 50%;
-  height: auto;
+
+ 
+
+  .bot{
+    flex-direction: row;
   }
+
+  .bleft, .bright{
+  flex-basis: 50%;
+  }
+
   
   }
 /* 
