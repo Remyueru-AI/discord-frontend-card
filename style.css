@@ -120,7 +120,7 @@ button:hover{
   }
   .bleft, .bright{
   width: 50%;
-    
+  height: auto;
   }
   
   }
